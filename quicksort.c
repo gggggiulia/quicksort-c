@@ -73,7 +73,8 @@ int main() {
     for (N = 500; N <= 5000; N += 500) {
         if (elementos_lidos < N) {
             fprintf(stderr, "Número de elementos lidos: %i. Inválido.\n", elementos_lidos);
-            break;
+            fclose(output);
+            return 1;
         }
 
         int *vet_aux = (int*)malloc(N * sizeof(int));
