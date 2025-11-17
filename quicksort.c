@@ -31,8 +31,12 @@ int partition(int v[], int left, int right) {
     int r = right;
 
     while (l < r) {
-        while (l < right && v[l] < pivot) l++;
-        while (r > left && v[r] >= pivot) r--;
+        while (l < right && v[l] < pivot){
+            l++;
+        }
+        while (r > left && v[r] >= pivot){ 
+            r--;
+        }
         if (l < r) {
             int aux = v[l];
             v[l] = v[r];
