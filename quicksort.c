@@ -92,10 +92,10 @@ int main() {
             quicksort(vet_aux, 0, N - 1);
             clock_t end = clock();
 
-            double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
-            tempo_total += time_spent;
+            double tempo_gasto = (double)(end - begin) / CLOCKS_PER_SEC;
+            tempo_total += tempo_gasto;
 
-            fprintf(output, "%.6f\n", time_spent);
+            fprintf(output, "%.6f\n", tempo_gasto);
         }
 
         double tempo_medio = tempo_total / R;
