@@ -37,11 +37,8 @@ int partition(int v[], int left, int right) {
             int aux = v[l];
             v[l] = v[r];
             v[r] = aux;
-        } else {
-            break;
         }
     }
-
     v[left] = v[r];
     v[r] = pivot;
     return r;
