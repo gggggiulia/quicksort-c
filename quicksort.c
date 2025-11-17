@@ -78,7 +78,7 @@ int main() {
 
         int *vet_aux = (int*)malloc(N * sizeof(int));
         if (vet_aux == NULL) {
-            fprintf(stderr, "Erro na alocação para %i números\n", N);
+            fprintf(stderr, "Erro na alocação.\n", N);
             fclose(output);
             return 1;
         }
