@@ -57,9 +57,8 @@ void quicksort(int v[], int left, int right) {
 
 int main() {
     int i, N, R = 1000;
-    int elementos_lidos;
-
-    elementos_lidos = ler_arq(vet_base, INPUT);
+    int elementos_lidos = ler_arq(vet_base, INPUT);
+    
     if (elementos_lidos == 0) return 1;
 
     FILE *output = fopen(OUTPUT, "wt");
